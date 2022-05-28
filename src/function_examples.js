@@ -8,7 +8,7 @@ quaisquer outros(number, string...), portanto é possivel guardá-las em variáv
  */
 
 //Declaration
-function fatorial(n){
+export function fatorial(n){
     if(n < 0) return;
 
     let result = 1;
@@ -21,7 +21,7 @@ function fatorial(n){
 }
 
 //Function expression
-let pow = function(x, n){return x ** n};
+export const pow = function(x, n){return x ** n};
 
 //Arrow function
-let sum = (a, b) => a + b;
+export const sum = (a, b) => a + b;
